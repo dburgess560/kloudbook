@@ -1,0 +1,71 @@
+{
+  userid:INT, //Should ONLY be null when creating a new user
+  primaryemail:"string",
+  gender:'char',
+  businessinfo: {
+  	address: {
+  		address1:"string",
+  		address2:"string",
+  		city:"string",
+  		state:"string",
+  		zip:"string"
+  	},
+  	phonenumber: {
+  		number:"string",
+  		extension:"string",
+  		country_code:"string"
+  	},
+  	company:"string"  	
+  },
+  homeinfo: {
+  	address: {
+  		address1:"string",
+  		address2:"string",
+  		city:"string",
+  		state:"string",
+  		zip:"string"
+  	},
+  	phonenumber: {
+  		number:"string",
+  		extension:"string",
+  		country_code:"string"
+  	},
+  	currentcity:"string"  	
+  },
+  name: {
+  	firstname:"string",
+  	middlename:"string",
+  	lastname:"string"
+  },
+  hometown:"string",
+  high_school:["string,"string"],
+  college:["string","string"],
+  mobilenumber: {
+	number:"string",
+	extension:"string",
+	country_code:"string"
+  },
+  registered:LONG,
+  birthday:LONG,
+  socialmedia:[
+  	{
+  	socialmediaurl:"string"
+  	},
+  	{
+  	socialmediaurl:"string"
+  	}
+  ],
+  additionalemails:["string","string"],
+  additionalnumbers:[
+  	phonenumber: {
+  		number:"string",
+  		extension:"string",
+  		country_code:"string"
+  	},
+  	phonenumber: {
+  		number:"string",
+  		extension:"string",
+  		country_code:"string"
+  	}
+  ]
+}

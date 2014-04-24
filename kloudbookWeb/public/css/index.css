@@ -1,0 +1,75 @@
+/* import min version of css?  and min this too after down with css fixes */
+
+@import "../lib/foundation/foundation.css";
+
+* {
+  margin: 5px;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+hr {
+	margin-top: 0rem;
+	margin-right: 1rem;
+	margin-left: 1rem;
+}
+
+h2 {
+	text-align: center;
+}
+
+li {
+	list-style-type: none;
+}
+
+/* Login Section */
+
+ul#login-section {
+	vertical-align: bottom;
+}
+
+ul#login-section li {
+	margin-right: 2px;
+}
+
+/* Signup Section */
+
+.agreement {
+	font-size: .2rem;
+	margin-top: 0;
+}
+
+#profileBoxContainer {
+	border: 2px solid;
+	border-color: #cccccc;
+	margin-top: 1rem;
+}
+
+.profileBoxList {
+	margin-top: 0.64285714rem;
+}
+
+
+#profile-box-head {
+	margin-top: 0.14285714rem;
+}
+
+.photo {
+	margin-top: 3.57142857rem;
+}
+
+#photo-submit {
+	margin-top: 155px;
+}
+
+/* Signup Form */
+
+input.ng-invalid.ng-dirty {
+  border: 1px solid red;
+}
+input.ng-valid.ng-dirty {
+  border: 1px solid green;
+}

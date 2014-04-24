@@ -1,0 +1,45 @@
+nav(class='top-bar')
+	div.row
+		div(class='large-7 columns')
+			ul(class='title-area')
+				li: a(href='/', id='logo'): img(src='/imgs/logo.png')
+	div(class='large-5 columns')
+hr
+h3 <strong>{{user.first}},</strong>let's get started,
+div.row
+	div(class='large-6 columns')
+		div.row
+			div(class='small-4 columns')
+				key High School
+			div(class='small-8 columns')
+				input(type='text', ng-model='pub.highSchools')
+		div.row
+			div(class='small-4 columns')
+				key College/University
+			div(class='small-8 columns')
+				input(type='text', ng-model='pub.colleges')
+		div.row
+			div(class='small-4 columns')
+				key Employer
+			div(class='small-8 columns')
+				input(type='text', ng-model='pub.employers')
+		div.row
+			div(class='small-4 columns')
+				key Current City
+			div(class='small-8 columns')
+				input(type='text', ng-model='pub.currentCity')
+		div.row
+			div(class='small-4 columns')
+				key Hometown
+			div(class='small-8 columns')
+				input(type='text', ng-model='pub.hometown')
+		div.row
+			div(class='small-8 small-offset-4 columns')
+				a(class='button', ng-click='createProfileSubmit(pub)') Create My Profile
+
+	div(class='large-5 columns' id='profileBoxContainer') 
+		br
+		| A Kloudbook profile helps you 
+		ul(class='profileBoxList')
+			li(class='profile-box-repeat', ng-repeat='phrase in profile_box')
+				i(class="fa fa-long-arrow-right")  {{phrase}}

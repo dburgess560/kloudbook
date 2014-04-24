@@ -1,0 +1,57 @@
+{
+  "login": {
+  	"primary_email":"bob@gmail.com",
+  	"password":"password"
+  },
+  "gender":"M",
+  "businessinfo": {
+  	"address": {
+		"address1":"32 Governers Drive",
+  		"city":"Amherst",
+  		"state":"MA",
+  		"zip":"01003"
+  	},
+  	"phonenumber": {
+  		"number":"4135551247",
+  		"country_code":"1"
+  	},
+  	"company":"UMass Amherst"  	
+  },
+  "homeinfo": {
+  	"address": {
+		"address1":"74 Tim Street",
+  		"address2":"Appt 4",
+  		"city":"Worcester",
+  		"state":"MA",
+  		"zip":"01538"
+  	},
+  	"currentcity":"Amherst"  	
+  },
+  "name": {
+  	"firstname":"Bob",
+  	"middlename":"R",
+  	"lastname":"Marks"
+  },
+  "hometown":"Worcester",
+  "high_school":["NBC","ABC"],
+  "college":["UMass"],
+  "mobilenumber": {
+  	"number":"5083301234",
+  },
+  "socialmedia":[
+  	{
+  	"socialmediaurl":"twitter.com"
+  	}
+  ],
+  "additionalemails":["bob2@gmail.com","bob3@gmail.com"],
+  "additionalnumbers":[
+  	"phonenumber": {
+  		"number":"8886664444",
+  		"extension":"134",
+  		"country_code":"7"
+  	},
+	"phonenumber": {
+  		"number":"9996661234"
+  	}
+  ]
+}

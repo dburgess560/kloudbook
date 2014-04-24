@@ -1,0 +1,7 @@
+{
+	"memberID":INT,
+	"accessLevel":INT,
+	"groupID":INT,
+	"userID":INT
+}
+	

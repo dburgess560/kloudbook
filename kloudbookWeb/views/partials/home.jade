@@ -1,0 +1,62 @@
+nav(class='top-bar')
+	div.row
+		div(class='large-7 columns')
+			ul(class='title-area')
+				li
+					a(href='/', id='logo')
+						img(src='/imgs/logo.png')
+		div(class='large-5 columns')
+			section(class='top-bar-section')
+				ul(class='right', id='login-section')
+					li: input(class='loginbox', type='text', ng-model='user.username')
+					li: input(class='loginbox', type='text', ng-model='user.secure')
+					li: button(id='login') Sign In
+hr
+div.row
+	div(class='small-12 columns', id='homepageHeader')
+		h2 Connect with Friends, Family and Business Associates
+
+div.row
+	div(class='large-6 columns', class='introVideoContainer')
+		h3 What is Kloudbook?
+		iframe(width='200', height='200')
+	div(class='large-6 columns', class='signupContainer')
+		h3 Get Started - it's Free!
+		h6 Registration takes less than a minute!
+		form(novalidate name='signup') 
+			div.row
+				div(class='medium-6 columns')
+					input(type='text', name='first', ng-model='user.first',
+								placeholder='First Name', ng-minlength=2, maxlength=20, required)
+					div(class='form_error', ng-show='signup.first.$dirty && signup.first.$invalid && signup.submitted')
+						medium(class='form_error')
+							div(ng-show='signup.first.$error.required') Your name is required.
+						medium(class='form_error')
+							div(ng-show='signup.first.$error.minlength') Your name must be at least 2 characters.
+						medium(class='form_error')
+							div(ng-show='signup.first.$error.maxlength') Your name cannot be longer than 20 characters.
+				div(class='medium-6 columns')
+					input(type='text', ng-model='user.last', ng-minlength=2, 
+								placeholder='Last Name', name='last', maxlength=20, required)
+					div(class='form_error', ng-show='signup.last.$dirty && signup.last.$invalid && signup.submitted')
+						medium(class='form_error')
+							div(ng-show='signup.last.$error.required') Your last name is required.
+						medium(class='form_error')
+							div(ng-show='signup.last.$error.minlength') Your last name must be at least 2 characters.
+						medium(class='form_error')
+							div(ng-show='signup.last.$error.maxlength') Your last name cannot be longer than 20 characters.
+			input(type='email', name='email', ng-model='user.email', placeholder='Email Address', required)
+			div(class='form_error', ng-show='signup.email.$dirty && signup.email.$invalid && signup.submitted')
+				medium(class='form_error')
+					div(ng-show='signup.email.$error.required') Your email address is required.
+				medium(class='form_error')
+					div(ng-show='signup.email.$error.email') Please input a valid email address.
+			input(type='text', name='pw', ng-model='user.password', placeholder='Password (8 or more characters)',
+				  	ng-minlength=8 required)
+			div(class='form_error', ng-show='signup.pw.$dirty && signup.pw.$invalid && signup.submitted')
+				medium(class='form_error')
+					div(ng-show='signup.pw.$error.required') A password is required.
+				medium(class='form_error')
+					div(ng-show='signup.pw.$error.minlength') Your password must be at least 2 characters.
+			a(class='button', ng-click='signupSubmit(user)') Join Now!
+			h6(class='agreement') {{agreement}}	

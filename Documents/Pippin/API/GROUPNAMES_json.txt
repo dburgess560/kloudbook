@@ -1,0 +1,4 @@
+{
+	"group_id":[INT, INT, INT],
+	"name":["string", "string", "string"] //This will just be the name of the group
+}

@@ -1,0 +1,18 @@
+{
+	"query":"string",
+	"email":"string",
+	"gender":'char',
+	"phonenumber": {
+		"number":"string",
+  		"extension":"string",
+  		"country_code":"string"
+	},
+	"company":"string",
+	"currentcity":"string",
+	"firstname":"string",
+  	"middlename":"string",
+  	"lastname":"string",
+	"hometown":"string",
+	"high_school":"string",
+	"college":"string"
+}

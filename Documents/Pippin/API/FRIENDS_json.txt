@@ -1,0 +1,5 @@
+{
+	"user_id":[INT, INT, INT],
+	"connection_id":[INT, INT, INT],
+	"name":["string", "string", "string"] //This will just be the full name of the user
+}

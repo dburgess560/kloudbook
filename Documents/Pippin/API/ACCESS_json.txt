@@ -1,0 +1,18 @@
+{
+	"connection_id":INT,
+	"user1_id":INT,
+	"user2_id":INT, //1 is for their public info available to anyone
+	"primaryEmail":TRUE,
+	"name":TRUE, //Name is always public
+	"gender":TRUE,
+	"mobileNumber":FALSE,
+	"picture":FALSE,
+	"birthday":TRUE,
+	"businessAddress":TRUE,
+	"businessNumber":FALSE,
+	"homeAddress":TRUE,
+	"homeNumber":FALSE,
+	"socialMedia":TRUE,
+	"additionalEmails":TRUE,
+	"additionalNumbers":FALSE,
+}

@@ -1,0 +1,5 @@
+{
+"notification_id":INT,
+"connection_id":INT,
+"isGroup":FALSE
+}

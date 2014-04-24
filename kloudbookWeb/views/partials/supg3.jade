@@ -1,0 +1,65 @@
+nav(class='top-bar')
+	div.row
+		div(class='large-7 columns')
+			ul(class='title-area')
+				li: a(href='/', id='logo'): img(src='/imgs/logo.png')
+	div(class='large-5 columns')
+hr
+h3 Contact Information
+div.row
+	div(class='large-9 large-offset-1 columns')
+		div.row
+			div(class='large-4 columns')
+				key Email
+			div(class='small-8 columns')
+				input(type='text', name="email" ng-model='priv.emails')
+				div(class='form_error', ng-show='signup.email.$dirty && signup.email.$invalid && signup.submitted')
+					medium(class='form_error')
+						div(ng-show='signup.email.$error.email') Please input a valid email address.
+		div.row
+			div(class='large-4 columns')
+				key Phone
+			div(class='small-8 columns')
+				div.row
+					div(class='large-3 columns')
+						select(ng-model='priv.phone.type', ng-options='opt for opt in phoneOptions')
+							option(value="") -- type --
+					div(class='small-4 columns')
+						select(ng-model='priv.phone.country', ng-options='country for country in countries')
+							option(value="") --- country ---
+					div(class='small-5 columns')
+						input(type='text', ng-model='priv.phone.number')
+		div.row
+			div(class='large-4 columns')
+				key Address Type
+			div(class='small-8 columns')
+				div.row
+					div(class='small-3 columns')
+						select(ng-model='priv.address.type', ng-options='opt for opt in addrOptions')
+							option(value="") -- type --
+		div.row
+			div(class='large-4 columns')
+				key Address Line 1
+			div(class='small-8 columns')
+				input(type='text', ng-model='priv.address.line1')
+		div.row
+			div(class='large-4 columns')
+				key Address Line 2
+			div(class='small-8 columns')
+				input(type='text', ng-model='priv.address.line2')
+		div.row
+			div(class='large-4 columns')
+				key City/Town
+			div(class='small-8 columns')
+				input(type='text', ng-model='priv.address.city')
+		div.row
+			div(class='large-4 columns')
+				key Zip Code
+			div(class='small-8 columns')
+				div.row
+					div(class='small-4 columns')
+						input(type='text', ng-model='priv.address.zip')
+		div.row
+			div(class='small-8 columns large-offset-4 columns')
+				a(class='button', ng-click='addContactsSubmit(priv)') Add Contact Information
+	

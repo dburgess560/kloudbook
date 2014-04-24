@@ -1,0 +1,17 @@
+[
+	{
+	"notification_id":1,
+	"connection_id":2,
+	"isGroup":false
+	},
+	{
+	"notification_id":1,
+	"connection_id":2,
+	"isGroup":true
+	},
+	{
+	"notification_id":1,
+	"connection_id":2,
+	"isGroup":false
+	}
+]

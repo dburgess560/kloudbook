@@ -1,0 +1,65 @@
+<!-- 
+dburgess
+Made this to finally get gson's working properly for backend server
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>GSON Test Page</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(function() { // on document load
+	$("#submit_button").click(function(event){
+		var data = $("#login").jsonSerialize();
+		var formData = new FormData();
+		var image = $('input[type="file"]')[0].files[0];
+		alert(image);
+		formData.append("image", image);
+		formData.append("json", JSON.stringify({"ID":2}));
+		//Franz test
+		
+		alert(data);
+		$.ajax({
+		    url: 'pictureUploadServlet', // /loginServlet
+		    data: formData,  // serialized data to send on server
+		    type:'POST', // set sending HTTP Request type
+		    contentType: false,
+		    cache: false,
+		    processData: false,
+		    success: function(data) { // callback method for further manipulations
+		    	alert("Upload");
+		    },
+		    error: function(data) { // if error occured
+		    }
+		});
+		event.preventDefault();
+	});
+	event.preventDefault();
+});
+(function ($) {
+    jQuery.fn.jsonSerialize = function () {
+        var obj = {};
+        var form = this[0];
+        if (form.tagName !== "FORM") {
+            return "";
+        }
+        $(form.elements).each(function () {
+            obj[this.name] = $(this).val();
+        });
+        return JSON.stringify(obj);
+    }
+}(jQuery));
+</script>
+</head>
+<body>
+<form id="login">
+User: <input type="text" name="primary_email">
+Pass: <input type="password" name="password">
+Image: <input type="file" id="profileImage" accept="image/*">
+</form>
+<button type="button" id="submit_button">Submit</button>
+
+</body>
+</html>

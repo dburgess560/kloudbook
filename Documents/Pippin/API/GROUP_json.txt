@@ -1,0 +1,6 @@
+{
+	"group_id":INT //Null if creating a group
+	"groupName":"string",
+	"description":"string",
+	"sharedInfo":INT //1-Business, 2-Personal, 3-School
+}

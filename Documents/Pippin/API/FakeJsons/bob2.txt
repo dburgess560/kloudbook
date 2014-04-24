@@ -1,0 +1,73 @@
+{
+  "login": {
+  	"primary_email":"bob@emal.com",
+  	"password":"test"
+  },
+  "gender":"m",
+  "businessinfo": {
+  	"address": {
+		"address1":"TAdd1",
+  		"address2":"",
+  		"city":"",
+  		"state":"MA",
+  		"zip":"01002"
+  	},
+  	"phonenumber": {
+  		"number":"413",
+  		"extension":"7",
+  		"country_code":"1"
+  	},
+  	"company":""  	
+  },
+  "homeinfo": {
+  	"address": {
+		"address1":"",
+  		"address2":"Appt6",
+  		"city":"Worcester",
+  		"state":"MA",
+  		"zip":"01538"
+  	},
+  	"phonenumber": {
+  		"number":"508",
+  		"extension":"",
+  		"country_code":""
+  	},
+  	"currentcity":"Amherst"  	
+  },
+  "name": {
+  	"firstname":"Bob",
+  	"middlename":"",
+  	"lastname":"Marks"
+  },
+  "hometown":"string",
+  "high_school":["string,"string"],
+  "college":["string","string"],
+  "mobilenumber": {
+  	"number":"string",
+  	"extension":"string",
+  	"country_code":"string"
+  },
+  "registered":"",
+  "birthday":"",
+  "socialmedia":[
+  	{
+  	"socialmediaurl":"string"
+  	},
+  	{
+  	"socialmediaurl":"string"
+  	}
+  ],
+  "additionalemails":["string","string"],
+  "additionalnumbers":[
+  	{
+  		"number":"string",
+  		"extension":"string",
+		"country_code":"string"
+  	},
+	{
+  		"number":"string",
+  		"extension":"string",
+  		"country_code":"string"
+  	}
+  ]
+}
